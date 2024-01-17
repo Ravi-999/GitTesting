@@ -1,0 +1,29 @@
+.accordion-container {
+  width: 400px;
+  margin: auto;
+  padding: 2px;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00ff00;
+}
+
+.accordion-button {
+  background-color: #ff00ff;
+}
+
+.accordion-content {
+  max-height: 0;
+  opacity: 1;
+  transition: max-height 1s linear, opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.visible {
+  max-height: 200px; /* Adjust the max height based on your content */
+  opacity: 1;
+}
